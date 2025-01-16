@@ -1,0 +1,29 @@
+.course {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: left;
+
+    .course-name {
+        flex: 1;
+    }
+
+    .prereq {
+        flex: 2;
+    }
+
+    span.unavailable {
+        color: red;
+    }
+
+    span.available {
+        color: green;
+    }
+}
+
+
+

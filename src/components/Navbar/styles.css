@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    color: white;
+    padding: 1em;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        font-size: 1.2rem;
+    }
+}
+
+button {
+    align-self: center;
+}
+
+.info-wrapper {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    span {
+        text-transform: capitalize;
+    }
+}
