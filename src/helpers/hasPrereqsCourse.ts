@@ -1,3 +1,5 @@
+import {Course, RegistrationsResponse} from "../types.ts";
+
 export const hasPrereqsCourse = (registrationData: RegistrationsResponse | undefined, course: Course) => {
   if (!registrationData) return false;
   return course.prereqs.every(prereq =>

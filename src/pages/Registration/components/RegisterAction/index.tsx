@@ -6,6 +6,7 @@ import './styles.css'
 import {hasPrereqsCourse} from "../../../../helpers/hasPrereqsCourse.ts";
 import useSWRImmutable from "swr/immutable";
 import useSWR, {mutate} from "swr";
+import {Course, CurrentTermResponse, RegistrationsResponse} from "../../../../types.ts";
 
 
 export const RegisterAction = ({course}: {

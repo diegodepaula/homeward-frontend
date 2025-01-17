@@ -1,6 +1,7 @@
 import React, {createContext, useCallback, useEffect, useMemo, useState} from "react";
 import api from "../services/api.ts";
 import {useNavigate} from "react-router";
+import {LoginResponse, Student} from "../types.ts";
 
 interface IAuthContext {
   student: Student | null,

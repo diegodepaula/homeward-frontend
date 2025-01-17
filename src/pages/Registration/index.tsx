@@ -7,6 +7,7 @@ import './styles.css'
 import {RegisterAction} from "./components/RegisterAction";
 import {hasPrereqsCourse} from "../../helpers/hasPrereqsCourse.ts";
 import useSWRImmutable from "swr/immutable";
+import {CoursesResponse, CurrentTermResponse, RegistrationsResponse} from "../../types.ts";
 
 
 export const Registration = React.memo(() => {

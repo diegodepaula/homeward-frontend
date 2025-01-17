@@ -1,22 +1,16 @@
-declare module '*.svg' {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const content: any;
-  export default content;
-}
-
-interface Student {
+export interface Student {
   id: number;
   username: string;
 }
 
-interface Term {
+export interface Term {
   id: number;
   name: string;
   startDate: string;
   endDate: string;
 }
 
-interface Course {
+export interface Course {
   id: number;
   name: string;
   prereqs: {
@@ -25,13 +19,13 @@ interface Course {
   }[];
 }
 
-interface CourseTerm {
+export interface CourseTerm {
   id: number;
   courses: Course[];
   term: number;
 }
 
-interface Registration {
+export interface Registration {
   id: number;
   studentId: number;
   courseTermId: number;
@@ -39,22 +33,22 @@ interface Registration {
   status: string;
 }
 
-interface LoginResponse {
+export interface LoginResponse {
   student: Student;
   token: string;
 }
 
-interface CurrentTermResponse {
+export interface CurrentTermResponse {
   id: number;
   name: string;
   startDate: string;
   endDate: string;
 }
 
-interface CoursesResponse {
+export interface CoursesResponse {
   courses: Course[];
 }
 
-interface RegistrationsResponse {
+export interface RegistrationsResponse {
   registrations: Registration[];
 }

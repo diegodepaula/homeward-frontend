@@ -1,6 +1,7 @@
 import {useAuth} from "../../hooks/useAuth.ts";
 import './styles.css'
 import useSWRImmutable from "swr/immutable";
+import {CurrentTermResponse} from "../../types.ts";
 
 
 export const Navbar = () => {
